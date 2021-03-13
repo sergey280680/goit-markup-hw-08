@@ -1,0 +1,21 @@
+.icon-link {
+    @include centeredFlex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    @include transition(background-color);
+
+    &:hover {
+        background-color: $colorDecor;
+        cursor: pointer;
+    }
+}
+
+.icon-link__image {
+    fill: $colorIcon;
+    @include transition(fill);
+
+    .icon-link:hover & {
+        fill: $colorMain;
+    }
+}

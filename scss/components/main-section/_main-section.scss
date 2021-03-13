@@ -1,0 +1,24 @@
+.main-section {
+  text-align: center;  
+  background-blend-mode: multiply;
+  background-image: url(../images/studio/bg-img.jpg);
+  background-color: $colorBGSection;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 200px 0;
+  
+}
+.main-section__title-main {
+  color: $colorMain;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+

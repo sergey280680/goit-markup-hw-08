@@ -1,0 +1,125 @@
+.modal__form-field {
+    position: relative;
+    display: block;
+}
+
+.modal__data-request {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.modal__form-input {
+    margin-bottom: 28px;
+    padding: 5px 5px 5px 43px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: $borderRadius;
+    @include transition(border);
+
+    &:focus {
+        outline: none;
+        border: 1px solid $colorDecor;
+    }
+}
+.modal__form-icon {
+    position: absolute;
+    left: 15px;
+    top: 11px;
+
+    .modal__form-input:focus-within ~ & {
+        fill: $colorDecor;
+    }
+}
+
+.modal__form-label {
+    position: absolute;
+    top: -18px;
+    left: 0;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $colorText;
+}
+
+.modal__form-label--placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    top: 12px;
+    left: 16px;
+    color: $colorPlaceholder_05;
+
+    .modal__form-field:focus-within > &,
+    .modal__form-comment:not(:placeholder-shown) + & {
+        opacity: 0;
+    }
+}
+
+.modal__form-comment {
+    padding: 12px 16px;
+    height: 120px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: $borderRadius;
+    @include transition(border);
+}
+
+.modal__form-checkbox {
+    display: flex;
+    justify-content: center;
+}
+
+.modal__checkbox {
+    appearance: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.modal__text-checkbox {
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.modal__text-checkbox--link {
+    color: $colorDecor;
+    border-bottom: 1px solid $colorDecor;
+    line-height: 1;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 7px;
+
+        @include border($colorNav);
+        border-radius: $borderRadius;
+
+        background-image: url(../images/svg/check.svg);
+        background-color: $colorMain;
+        @include transition(background-color);
+    }
+
+    .modal__checkbox:checked ~ &::before {
+        background-color: $colorDecor;
+        border: none;
+    }
+}
+
+.modal__btn {
+    display: block;
+    margin: 30px auto 0;
+}

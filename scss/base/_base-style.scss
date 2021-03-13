@@ -1,0 +1,61 @@
+body {
+    @include fonts;
+}
+section {
+    padding: 60px 0;
+}
+address {
+    font-style: normal;
+}
+button {
+    font-family: inherit;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+// button,
+// button:active,
+// button:focus {
+// outline: none;
+// }
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+    color: $colorTitle;
+    letter-spacing: 0.06em;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: $colorText;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+textarea {
+    resize: none;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

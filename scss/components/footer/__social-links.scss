@@ -1,0 +1,27 @@
+
+    .footer__social-links {
+    // margin-right: 93px;
+    }
+    .footer__subscribe {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $colorMain;
+    }
+    .footer__links {
+    width: 206px;
+    display: flex;
+    }
+    .footer__icon-social {
+    fill: $colorMain;
+    }
+    .footer__links-item:not(:last-child) {
+    margin-right: 10px;
+    }
+    .footer__icon-social-link {
+    background: $colorLinkBackground;
+    }
+

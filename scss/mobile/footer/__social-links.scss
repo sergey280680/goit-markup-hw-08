@@ -1,0 +1,25 @@
+.footer__social-links{
+    @include columnFlex;
+    margin-bottom: 61px;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+}
+
+.footer__subscribe{
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $colorMain;
+margin-bottom: 19px;
+}
+
+.footer__links-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: $colorBgIconFooter;
+}

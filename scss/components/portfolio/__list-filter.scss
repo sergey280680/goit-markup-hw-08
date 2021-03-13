@@ -1,0 +1,32 @@
+.portfolio__list-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.portfolio__list-filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio__filter-link {
+    font-weight: 500;
+    padding: 6px 22px;
+    line-height: 1.6;
+    background-color: $colorBackground;
+    color: $colorTitle;
+    transition: background-color $cubic-bezier, color $cubic-bezier,
+        box-shadow $cubic-bezier;
+    // @include transition(background-color);
+    // @include transition(color);
+    // @include transition(box-shadow);
+
+    &:focus,
+    &:hover {
+        color: $colorMain;
+        background-color: $colorHover;
+        @include box-shadow(
+            0px 3px 1px rgba(0, 0, 0, 0.1),
+            0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12)
+        );
+    }
+}

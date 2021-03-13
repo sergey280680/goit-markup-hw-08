@@ -1,0 +1,17 @@
+.main-section {
+    padding: 118px 15px;
+    max-width: 1600px;
+    text-align: center;
+    background-color: rgb(231, 168, 168);
+}
+.main-section__title-main {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    color: $colorMain;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
