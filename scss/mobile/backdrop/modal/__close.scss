@@ -1,0 +1,21 @@
+.modal__close {
+    position: absolute;
+    @include centeredFlex;
+    top: 8px;
+    right: 8px;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    @include border($colorBorderBtnClose);
+    background-color: $colorMain;
+
+    cursor: pointer;
+}
+.modal__close-icon {
+    @include transition(fill);
+    &:hover {
+        fill: $colorHover;
+    }
+}

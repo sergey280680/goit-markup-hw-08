@@ -1,0 +1,21 @@
+.modal {
+    position: absolute;
+    // top: 50%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    // width: 528px;
+    width: calc(100% - 15px);
+    // max-width: 450px;
+    min-height: 581px;
+    padding: 40px 41px;
+
+    background: $colorMain;
+    border-radius: $borderRadius;
+    @include box-shadow;
+    @include transition(transform);
+}
+
+@import "./_close";
+@import "./_form";
