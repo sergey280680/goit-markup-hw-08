@@ -2,7 +2,12 @@
     padding: 118px 15px;
     max-width: 1600px;
     text-align: center;
-    background-color: rgb(231, 168, 168);
+    background-blend-mode: multiply;
+  background-image: url(../images/studio/bg-img.jpg);
+  background-color: $colorBGSection;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-section__title-main {
     font-family: Roboto;

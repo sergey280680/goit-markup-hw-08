@@ -644,7 +644,7 @@
 			</section>
 		</main>
 
-		<!-- подвал -->
+		<!-- footer -->
 		<footer class="footer">
 			<div class="footer__container container">
 				<div class="footer__address-wrapper">
@@ -761,6 +761,7 @@
 						<button
 							type="submit"
 							class="button footer__subscribe-btn"
+							aria-label="кнопка согласия на подписку"
 						>
 							Подписаться
 							<svg
@@ -779,12 +780,13 @@
 		</footer>
 
 		<!-- backdrop -->
-		<!-- <div class="backdrop backdrop__hidden" data-modal> -->
-		<div class="backdrop" data-modal>
+		<div class="backdrop backdrop__hidden" data-modal>
 			<div class="modal">
 				<div class="modal__close-wrapper">
 					<!-- button close -->
-					<button class="modal__close" data-modal-close>
+					<button class="modal__close"
+						aria-label="кнопка закрытия формы отправки"
+						data-modal-close>
 						<svg class="modal__close-icon" width="18" height="18">
 							<use
 								href="./images/svg/icon-sprite.svg#icon-close"
@@ -801,6 +803,7 @@
 								type="text"
 								class="modal__form-input"
 								name="name"
+								aria-label="строка для ввода имени"
 								placeholder=" "
 							/>
 							<span class="modal__form-label">Имя</span>
@@ -819,6 +822,7 @@
 								type="text"
 								class="modal__form-input"
 								name="tel"
+								aria-label="строка для ввода телефона"
 								placeholder=" "
 							/>
 							<span class="modal__form-label">Телефон</span>
@@ -837,6 +841,7 @@
 								type="text"
 								class="modal__form-input"
 								name="email"
+								aria-label="строка для ввода электронной почты"
 								placeholder=" "
 							/>
 							<span class="modal__form-label">Почта</span>
@@ -854,10 +859,11 @@
 						<label class="modal__form-field modal__form-field--textarea">
 							<span class="modal__form-label">Коментарий</span>
 							<textarea
-								class="modal__form-input modal__form-comment"
+								class="modal__form-input modal__form-input--comment"
 								name="comment"
 								cols="30"
 								rows="8"
+								aria-label="строка для коментариев"
 								placeholder=" "
 							></textarea>
 							<span
@@ -876,13 +882,16 @@
 								Соглашаюсь с рассылкой и принимаю &nbsp;<a
 									href="#"
 									class="modal__text-checkbox--link"
+									aria-label="метка на соглашение по условию договора"
 								>
 									Условия договора</a
 								>
 							</span>
 						</label>
 						<!-- button submit -->
-						<button class="button modal__btn" type="submit">
+						<button class="button modal__btn"
+						 type="submit"
+						 aria-label="кнопка для отправки своих данных">
 							Отправить
 						</button>
 					</form>

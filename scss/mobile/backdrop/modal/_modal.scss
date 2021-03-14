@@ -1,14 +1,16 @@
 .modal {
     position: absolute;
-    // top: 50%;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
     // width: 528px;
-    width: calc(100% - 15px);
     // max-width: 450px;
-    min-height: 581px;
+
+
+	
+	width: calc(100% - 15px);
+    min-height: 609px;
     padding: 40px 41px;
 
     background: $colorMain;
