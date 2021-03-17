@@ -1,24 +1,7 @@
-.header {
-    padding: 10px 0;
-    border-bottom: 1px solid $colorBorderBottomHeader;
-}
 
-.header__navigation {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@import "./_header";
+@import "./_burger";
+@import "./_menu";
 
 
-.header__burger-icon{
-    display: block;
-    background-color: $colorMain;
-}
 
-.header__menu {
-    display: none;
-    position: absolute;
-
-    background-color: rgb(231, 191, 191);
-}

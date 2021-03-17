@@ -1,6 +1,17 @@
+// .footer__container {
+// 	@include columnFlex;
+// }
 
-
-
-.footer__container{
-    @include columnFlex;
+@media screen and (min-width: 768px) {
+	.footer__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footer__address-wrapper,
+	.footer__social-links{
+		flex: 0 1 50%;
+	}
+	.footer__subscribe-newsletter{
+		flex: 0 1 100%;
+	}
 }

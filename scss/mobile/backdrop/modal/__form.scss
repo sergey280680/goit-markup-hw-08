@@ -98,7 +98,7 @@
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 1.166;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.02em;
 	color: $colorText;
 	&::before {
 		content: "";
@@ -124,5 +124,28 @@
     line-height: 1;
 	
 }
+
+
+
+
+// .modal-form-wrapper:hover > .contact-form-input{
+// 	border: 1px solid blue;
+// }
+// .modal-form-wrapper:hover > .contact-form-svg{
+// 	fill: blue;
+// }
+
+// .modal-form-wrapper:hover > .contact-form-input,
+// .modal-form-wrapper:focus > .contact-form-input{
+// 	border: 1px solid blue;
+// }
+// .modal-form-wrapper:hover > .contact-form-svg,
+// .modal-form-wrapper:focus > .contact-form-svg{
+// 	fill: blue;
+// }
+
+
+
+
 
 

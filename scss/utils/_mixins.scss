@@ -17,8 +17,6 @@
     border: 1px solid $color;
 }
 
-
-
 @mixin transition(
     $property,
     $time: 250ms,
@@ -27,10 +25,6 @@
     transition: $property $time $cubic-bezier;
 }
 
-
-
-
-
 @mixin box-shadow(
     $layer-1: 0px 1px 3px rgba(0, 0, 0, 0.12),
     $layer-2: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -38,8 +32,6 @@
 ) {
     box-shadow: $layer-1, $layer-2, $layer-3;
 }
-
-
 
 @mixin centeredFlex($type: flex) {
     display: $type;
@@ -52,3 +44,4 @@
     flex-direction: column;
     align-items: center;
 }
+

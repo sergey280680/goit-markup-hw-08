@@ -3,7 +3,7 @@
     @include columnFlex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
     .footer__address-wrapper {
         margin-bottom: 56px;
     }

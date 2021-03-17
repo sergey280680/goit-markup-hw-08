@@ -6,6 +6,11 @@
 		<title>Студия</title>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
+			href="./images/studio/logo.png"
+			rel="shortcut icon"
+			type="image/x-icon"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
@@ -23,25 +28,35 @@
 		<header class="header">
 			<div class="container header__container">
 				<nav class="header__navigation">
-					<a href="#" lang="en" class="logo header__logo"
-									><span class="logo__decor">Web</span>Studio
+					<a href="./index.html" lang="en" class="logo header__logo"
+						><span class="logo__decor">Web</span>Studio
 					</a>
 
-								<button
-						class="header__burger-btn"
+					<button
+						class="header__menu-btn"
 						type="button"
-						aria-label="переключатель мобильного меню"
+						aria-expanded="false"
+						aria-controls="header-menu"
+						data-menu-button
 					>
-						<svg class="header__burger-icon" width="40" height="40">
+						<svg
+							class="header__menu-icon"
+							width="40"
+							height="40"
+							aria-label="переключатель мобильного меню"
+						>
 							<use
+								class="header__icon-burger"
 								href="./images/svg/icon-sprite.svg#icon-burger"
 							></use>
 							<use
+								class="header__icon-close"
 								href="./images/svg/icon-sprite.svg#icon-close"
 							></use>
 						</svg>
 					</button>
-					<div class="header__menu">
+
+					<div class="header__menu" id="header-menu" data-menu>
 						<ul class="header__nav-list">
 							<li class="header__nav-list-item">
 								<a
@@ -64,42 +79,67 @@
 							</li>
 						</ul>
 
-						<ul class="header__contacts">
-							<li class="header__contacts-item">
-								<a
-									class="header__contact"
-									href="mailto:info@devstudio.com"
-								>
-									<svg
-										class="header__contact-tel"
-										width="16"
-										height="12"
+						<div class="header__contacts-wrapper">
+							<ul class="header__contacts">
+								<li class="header__contacts-item">
+									<a
+										class="header__contact header__contact-mail"
+										href="mailto:info@devstudio.com"
 									>
-										<use
-											href="./images/svg/icon-sprite.svg#icon-envelope"
-										></use>
-									</svg>
-									info@devstudio.com
-								</a>
-							</li>
-							<li class="header__contacts-item">
-								<a
-									class="header__contact"
-									href="tel:+380961111111"
-								>
-									<svg
-										class="header__contact-tel"
-										width="10"
-										height="16"
+										<svg
+											class="header__contact-icon"
+											width="16"
+											height="12"
+										>
+											<use
+												href="./images/svg/icon-sprite.svg#icon-envelope"
+											></use>
+										</svg>
+										info@devstudio.com
+									</a>
+								</li>
+								<li class="header__contacts-item">
+									<a
+										class="header__contact header__contact-tel"
+										href="tel:+380961111111"
 									>
-										<use
-											href="./images/svg/icon-sprite.svg#icon-smartphone"
-										></use>
-									</svg>
-									+38 096 111 11 11
-								</a>
-							</li>
-						</ul>
+										<svg
+											class="header__contact-icon"
+											width="10"
+											height="16"
+										>
+											<use
+												href="./images/svg/icon-sprite.svg#icon-smartphone"
+											></use>
+										</svg>
+										+38 096 111 11 11
+									</a>
+								</li>
+							</ul>
+
+							<ul class="header__social-links">
+								<li class="header__social-links-item">
+									<a class="header__social-link" href="#"
+										>Instagram</a
+									>
+								</li>
+								<li class="header__social-links-item">
+									<a class="header__social-link" href="#"
+										>Twitter</a
+									>
+								</li>
+								<li class="header__social-links-item">
+									<a class="header__social-link" href="#"
+										>Facebook</a
+									>
+								</li>
+								<li class="header__social-links-item">
+									<a class="header__social-link" href="#"
+										>Linkedin</a
+									>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</nav>
 			</div>
@@ -648,7 +688,7 @@
 		<footer class="footer">
 			<div class="footer__container container">
 				<div class="footer__address-wrapper">
-					<a href="#" lang="en" class="logo footer__logo"
+					<a href="./index.html" lang="en" class="logo footer__logo"
 						><span class="logo__decor">Web</span>Studio</a
 					>
 					<address class="footer__address">
@@ -784,9 +824,11 @@
 			<div class="modal">
 				<div class="modal__close-wrapper">
 					<!-- button close -->
-					<button class="modal__close"
+					<button
+						class="modal__close"
 						aria-label="кнопка закрытия формы отправки"
-						data-modal-close>
+						data-modal-close
+					>
 						<svg class="modal__close-icon" width="18" height="18">
 							<use
 								href="./images/svg/icon-sprite.svg#icon-close"
@@ -856,7 +898,9 @@
 							</svg>
 						</label>
 						<!-- textarea -->
-						<label class="modal__form-field modal__form-field--textarea">
+						<label
+							class="modal__form-field modal__form-field--textarea"
+						>
 							<span class="modal__form-label">Коментарий</span>
 							<textarea
 								class="modal__form-input modal__form-input--comment"
@@ -889,9 +933,11 @@
 							</span>
 						</label>
 						<!-- button submit -->
-						<button class="button modal__btn"
-						 type="submit"
-						 aria-label="кнопка для отправки своих данных">
+						<button
+							class="button modal__btn"
+							type="submit"
+							aria-label="кнопка для отправки своих данных"
+						>
 							Отправить
 						</button>
 					</form>
@@ -899,6 +945,7 @@
 			</div>
 		</div>
 
+		<script src="./js/menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

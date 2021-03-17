@@ -38,3 +38,12 @@
         @include border($colorDecor);
     }
 }
+
+@media screen and (min-width: 768px) {
+		.clients__list-item-link {
+    // margin: 15px;
+    // width: 50%;
+    width: calc((100% - 90px) / 3);
+    // width: 210px;
+}
+	}

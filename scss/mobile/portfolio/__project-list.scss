@@ -1,0 +1,96 @@
+.portfolio__progect {
+	max-width: 450px;
+	margin: 0 auto;
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	&:hover {
+		@include box-shadow(
+			0px 1px 1px rgba(0, 0, 0, 0.12),
+			0px 4px 4px rgba(0, 0, 0, 0.06),
+			1px 4px 6px rgba(0, 0, 0, 0.16)
+		);
+	}
+}
+
+.portfolio__progect-list {
+	margin-top: 40px;
+}
+
+.portfolio__thumb {
+	position: relative;
+	overflow: hidden;
+	height: 294px;
+	width: 100%;
+}
+
+.portfolio__img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio__name-progect {
+	padding: 20px 24px;
+}
+
+.portfolio__title {
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.portfolio__title-subtext {
+	line-height: 1, 875;
+	color: #757575;
+	margin-top: 4px;
+}
+
+.portfolio__name-progect {
+	padding: 20px 24px;
+	border-right: 1px solid $colorBorder;
+	border-bottom: 1px solid $colorBorder;
+	border-left: 1px solid $colorBorder;
+}
+
+// ===============================
+.portfolio__overflay-card {
+	@include centeredFlex;
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+
+	padding: 24px;
+	height: 100%;
+	width: 100%;
+	background-color: $colorOverlayCard;
+
+	transform: translateY(0);
+	@include transition(transform);
+
+	.portfolio__progect:hover & {
+		transform: translateY(-100%);
+	}
+}
+.portfolio__overflay-card-text {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.55;
+	letter-spacing: 0.03em;
+	color: $colorMain;
+}
+
+// ==================================
+// ======== min-width: 768px ========
+// ==================================
+@media screen and (min-width: 768px) {
+		.portfolio__progect-list{
+			display: flex;
+			flex-wrap: wrap;
+			margin: -15px;
+		}
+		.portfolio__progect{
+			width: calc((100% - 60px) / 2);
+			margin: 15px;
+		}
+	}
