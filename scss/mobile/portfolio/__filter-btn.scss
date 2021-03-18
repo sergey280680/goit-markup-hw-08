@@ -1,3 +1,19 @@
+.portfolio__list-filter {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -8px;
+	margin-bottom: -15px;
+	@media screen and(min-width: 768px) {
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+}
+
+.portfolio__list-filter-item {
+	margin-right: 8px;
+	margin-bottom: 15px;
+}
+
 .portfolio__filter-link {
 	padding: 6px 22px;
 	background: $colorBackground;
@@ -13,20 +29,3 @@
 		color: $colorMain;
 	}
 }
-
-.portfolio__list-filter {
-	display: flex;
-	flex-wrap: wrap;
-	margin-right: -8px;
-	margin-bottom: -15px;
-	@media screen and(min-width: 768px) {
-		justify-content: center;
-	}
-}
-
-.portfolio__list-filter-item {
-	margin-right: 8px;
-	margin-bottom: 15px;
-}
-
-

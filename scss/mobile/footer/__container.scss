@@ -1,17 +1,28 @@
-// .footer__container {
-// 	@include columnFlex;
-// }
-
-@media screen and (min-width: 768px) {
-	.footer__container {
+.footer__container {
+	@media (min-width: 768px) {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.footer__address-wrapper,
-	.footer__social-links{
+	@media (min-width: 1200px) {
+		flex-wrap: nowrap;
+		// justify-content: space-between;
+	}
+}
+.footer__address-wrapper,
+.footer__social-links {
+	@media (min-width: 768px) {
 		flex: 0 1 50%;
 	}
-	.footer__subscribe-newsletter{
+}
+.footer__subscribe-newsletter {
+	@media (min-width: 768px) {
 		flex: 0 1 100%;
+	}
+}
+.footer__address-wrapper,
+.footer__social-links,
+.footer__subscribe-newsletter {
+	@media (min-width: 1200px) {
+		flex: none;
 	}
 }

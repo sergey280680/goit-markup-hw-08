@@ -6,6 +6,9 @@ body.modal-open {
 }
 section {
 	padding: 60px 0;
+	@media (min-width: 1200px) {
+		padding: 94px 0;
+	}
 }
 address {
 	font-style: normal;
@@ -56,17 +59,18 @@ textarea {
 	resize: none;
 }
 .container {
-	@media screen and (min-width: 320px) {
+	@media (min-width: 320px) {
 		max-width: 480px;
+		min-width: 320px;
 		margin-left: auto;
 		margin-right: auto;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	@media screen and (min-width: 768px) {
+	@media (min-width: 768px) {
 		max-width: 768px;
 	}
-	@media screen and (min-width: 1200px) {
+	@media (min-width: 1200px) {
 		max-width: 1200px;
 	}
 }

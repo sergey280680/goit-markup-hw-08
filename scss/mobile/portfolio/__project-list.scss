@@ -1,3 +1,12 @@
+.portfolio__progect-list {
+	margin-top: 40px;
+	@media (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -15px;
+	}
+}
+
 .portfolio__progect {
 	max-width: 450px;
 	margin: 0 auto;
@@ -11,17 +20,22 @@
 			1px 4px 6px rgba(0, 0, 0, 0.16)
 		);
 	}
+	@media (min-width: 768px) {
+		width: calc((100% - 60px) / 2);
+		margin: 15px;
+	}
 }
 
-.portfolio__progect-list {
-	margin-top: 40px;
+.portfolio__progect-link {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .portfolio__thumb {
 	position: relative;
 	overflow: hidden;
 	height: 294px;
-	width: 100%;
 }
 
 .portfolio__img {
@@ -30,30 +44,6 @@
 	height: 100%;
 }
 
-.portfolio__name-progect {
-	padding: 20px 24px;
-}
-
-.portfolio__title {
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
-}
-
-.portfolio__title-subtext {
-	line-height: 1, 875;
-	color: #757575;
-	margin-top: 4px;
-}
-
-.portfolio__name-progect {
-	padding: 20px 24px;
-	border-right: 1px solid $colorBorder;
-	border-bottom: 1px solid $colorBorder;
-	border-left: 1px solid $colorBorder;
-}
-
-// ===============================
 .portfolio__overflay-card {
 	@include centeredFlex;
 	position: absolute;
@@ -72,6 +62,7 @@
 		transform: translateY(-100%);
 	}
 }
+
 .portfolio__overflay-card-text {
 	font-weight: 400;
 	font-size: 18px;
@@ -80,17 +71,22 @@
 	color: $colorMain;
 }
 
-// ==================================
-// ======== min-width: 768px ========
-// ==================================
-@media screen and (min-width: 768px) {
-		.portfolio__progect-list{
-			display: flex;
-			flex-wrap: wrap;
-			margin: -15px;
-		}
-		.portfolio__progect{
-			width: calc((100% - 60px) / 2);
-			margin: 15px;
-		}
-	}
+.portfolio__name-progect {
+	flex-grow: 1;
+	padding: 20px 24px;
+	border-right: 1px solid $colorBorder;
+	border-bottom: 1px solid $colorBorder;
+	border-left: 1px solid $colorBorder;
+}
+
+.portfolio__title {
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.portfolio__title-subtext {
+	line-height: 1, 875;
+	color: #757575;
+	margin-top: 4px;
+}

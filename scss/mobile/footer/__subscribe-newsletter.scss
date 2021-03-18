@@ -1,31 +1,52 @@
+.footer__subscribe-newsletter {
+	@media (max-width: 1199px) {
+		text-align: center;
+		width: 100%;
+	}
+	@media (min-width: 768px) {
+		margin-top: 60px;
+	}
+	@media (min-width: 1200px) {
+		margin-top: 0;
+	}
+}
+
 .footer__form {
 	@include columnFlex;
 	max-width: 450px;
 	margin: 0 auto;
-}
-@media screen and (max-width: 1199px) {
-	.footer__subscribe-newsletter {
-		text-align: center;
-		width: 100%;
-	}
-	.footer__form-field {
-		margin-bottom: 20px;
+	@media (min-width: 1200px) {
+		flex-direction: row;
+		max-width: 570px;
+		// justify-content: space-around;
+		margin: 0;
+		// width: 570px;
 	}
 }
 
 .footer__form-field {
 	position: relative;
 	width: 100%;
+	@media (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+	@media (min-width: 1200px) {
+		margin-right: 12px;
+	}
 }
+
 .footer__form-input {
-	width: 100%;
-	// max-width: 450px;
+	width: 450px;
 	height: 50px;
 	padding: 15px 16px;
 	@include border(rgba(255, 255, 255, 0.3));
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: $borderRadius;
 	background-color: $colorBgFooter;
+	color: $colorMain;
+	@media (min-width: 1200px){
+		width: 358px;
+	}
 }
 
 .footer__form-label {
@@ -55,10 +76,3 @@
 .footer__telegram-icon {
 	margin-left: 10px;
 }
-
-@media screen and (min-width: 768px) {
-	.footer__subscribe-newsletter {
-		margin-top: 60px;
-	}
-}
-

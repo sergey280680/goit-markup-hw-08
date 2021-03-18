@@ -49,10 +49,6 @@
 								class="header__icon-burger"
 								href="./images/svg/icon-sprite.svg#icon-burger"
 							></use>
-							<use
-								class="header__icon-close"
-								href="./images/svg/icon-sprite.svg#icon-close"
-							></use>
 						</svg>
 					</button>
 
@@ -117,7 +113,7 @@
 								</li>
 							</ul>
 
-							<ul class="header__social-links">
+							<!-- <ul class="header__social-links">
 								<li class="header__social-links-item">
 									<a class="header__social-link" href="#"
 										>Instagram</a
@@ -138,7 +134,7 @@
 										>Linkedin</a
 									>
 								</li>
-							</ul>
+							</ul> -->
 						</div>
 					</div>
 				</nav>
@@ -236,31 +232,54 @@
 					<h2 class="making__title">Чем мы занимаемся</h2>
 					<ul class="making__list">
 						<li class="making__list-item">
-							<img
-								src="./images/studio/img-1.jpg"
-								alt="картинка-1"
-								width="370"
-							/>
+							<div class="making__wrapper-card">
+								<div class="making__thumb">
+									<img
+										class="making__img"
+										srcset="
+											./images/studio/img-1.jpg    1x,
+											./images/studio/img-1@2x.jpg 2x
+										"
+										src="./images/studio/img-1.jpg"
+										alt="картинка-1"
+									/>
+								</div>
+							</div>
+
 							<h3 class="making__title-item">
 								Десктопные приложения
 							</h3>
 						</li>
+
 						<li class="making__list-item">
-							<img
-								src="./images/studio/img-2.jpg"
-								alt="картинка-2"
-								width="370"
-							/>
+							<div class="making__thumb">
+								<img
+									srcset="
+										./images/studio/img-2.jpg    1x,
+										./images/studio/img-2@2x.jpg 2x
+									"
+									src="./images/studio/img-2.jpg"
+									alt="картинка-2"
+								/>
+							</div>
+
 							<h3 class="making__title-item">
 								Мобильные приложения
 							</h3>
 						</li>
+
 						<li class="making__list-item">
-							<img
-								src="./images/studio/img-3.jpg"
-								alt="картинка-3"
-								width="370"
-							/>
+							<div class="making__thumb">
+								<img
+									srcset="
+										./images/studio/img-3.jpg    1x,
+										./images/studio/img-3@2x.jpg 2x
+									"
+									src="./images/studio/img-3.jpg"
+									alt="картинка-3"
+								/>
+							</div>
+
 							<h3 class="making__title-item">
 								Дизайнерские решения
 							</h3>
@@ -275,11 +294,18 @@
 					<h2 class="team__title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__list-item">
-							<img
-								class="team__img"
-								src="./images/studio/demyanenko.jpg"
-								alt="Игорь Демьяненко"
-							/>
+							<div class="team__thumb">
+								<img
+									class="team__img"
+									srcset="
+										./images/studio/demyanenko.jpg    1x,
+										./images/studio/demyanenko@2x.jpg 2x
+									"
+									src="./images/studio/demyanenko.jpg"
+									alt="courier"
+								/>
+							</div>
+
 							<div class="team-name">
 								<h3 class="team__title-name">
 									Игорь Демьяненко
@@ -356,11 +382,18 @@
 							</div>
 						</li>
 						<li class="team__list-item">
-							<img
-								class="team__img"
-								src="./images/studio/repina.jpg"
-								alt="Ольга Репина"
-							/>
+							<div class="team__thumb">
+								<img
+									class="team__img"
+									srcset="
+										./images/studio/repina.jpg    1x,
+										./images/studio/repina@2x.jpg 2x
+									"
+									src="./images/studio/repina.jpg"
+									alt="courier"
+								/>
+							</div>
+
 							<div class="team-name">
 								<h3 class="team__title-name">Ольга Репина</h3>
 								<p class="team__text" lang="en">
@@ -435,11 +468,18 @@
 							</div>
 						</li>
 						<li class="team__list-item">
-							<img
-								class="team__img"
-								src="./images/studio/tarasov.jpg"
-								alt="Николай Тарасов"
-							/>
+							<div class="tem__thumb">
+								<img
+									class="team__img"
+									srcset="
+										./images/studio/tarasov.jpg    1x,
+										./images/studio/tarasov@2x.jpg 2x
+									"
+									src="./images/studio/tarasov.jpg"
+									alt="courier"
+								/>
+							</div>
+
 							<div class="team-name">
 								<h3 class="team__title-name">
 									Николай Тарасов
@@ -514,15 +554,20 @@
 							</div>
 						</li>
 						<li class="team__list-item">
-							<img
-								class="team__img"
-								src="./images/studio/ermakov.jpg"
-								alt="Михаил Ермаков"
-							/>
+							<div class="team__thumb">
+								<img
+									class="team__img"
+									srcset="
+										./images/studio/ermakov.jpg    1x,
+										./images/studio/ermakov@2x.jpg 2x
+									"
+									src="./images/studio/ermakov.jpg"
+									alt="courier"
+								/>
+							</div>
+
 							<div class="team-name">
-								<h3 class="team__title-name">
-									Николай Тарасов
-								</h3>
+								<h3 class="team__title-name">Михаил Ермаков</h3>
 								<p class="team__text" lang="en">Marketing</p>
 								<ul class="team__icon-social-list">
 									<li>

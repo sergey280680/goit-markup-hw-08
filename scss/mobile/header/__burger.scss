@@ -1,9 +1,8 @@
-.header__menu-btn{
-	position: absolute;
-	z-index: 2;
-	right: 10px;
+.header__menu-btn {
 	outline: none;
-	
+	@media (min-width: 768px) {
+		display: none;
+	}
 }
 
 .header__menu-icon {
@@ -11,22 +10,7 @@
 	background-color: $colorMain;
 	fill: $colorIconForm;
 	@include transition(fill);
-	.header__menu-btn:hover > &{
+	.header__menu-btn:hover > & {
 		fill: $colorDecor;
 	}
-}
-
-
-
-.header__icon-close {
-	display: none;
-	
-}
-
-.header__menu-btn.is-open .header__icon-close {
-	display: block;
-}
-
-.header__menu-btn.is-open .header__icon-burger {
-	display: none;
 }

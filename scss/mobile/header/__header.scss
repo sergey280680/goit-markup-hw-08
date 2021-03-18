@@ -1,11 +1,17 @@
 .header {
-	// position: relative;
-    padding: 16px 0;
-    border-bottom: 1px solid $colorBorderBottomHeader;
+	padding: 10px 0;
+	border-bottom: 1px solid $colorBorderBottomHeader;
+	@media (min-width: 768px) {
+		padding: 19px 0;
+	}
+	@media (min-width: 1200px) {
+		padding: 26px 0;
+	}
+	
 }
 
 .header__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
