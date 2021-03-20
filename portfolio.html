@@ -32,10 +32,10 @@
 					</a>
 
 					<button
-						class="header__menu-btn"
+						class="header__menu-toggle js-open-menu"
 						type="button"
 						aria-expanded="false"
-						aria-controls="header-menu"
+						aria-controls="mobile-menu"
 						data-menu-button
 					>
 						<svg
@@ -54,14 +54,16 @@
 					<div class="header__menu" id="header-menu" data-menu>
 						<ul class="header__nav-list">
 							<li class="header__nav-list-item">
-								<a class="header__nav-link" href="./index.html"
+								<a
+									class="header__nav-link"
+									href="./index.html"
 									>Студия</a
 								>
 							</li>
 							<li class="header__nav-list-item">
 								<a
 									class="header__nav-link header__nav-link--current"
-									href="#"
+									href="./portfolio.html"
 									>Портофолио</a
 								>
 							</li>
@@ -109,29 +111,6 @@
 									</a>
 								</li>
 							</ul>
-
-							<!-- <ul class="header__social-links">
-								<li class="header__social-links-item">
-									<a class="header__social-link" href="#"
-										>Instagram</a
-									>
-								</li>
-								<li class="header__social-links-item">
-									<a class="header__social-link" href="#"
-										>Twitter</a
-									>
-								</li>
-								<li class="header__social-links-item">
-									<a class="header__social-link" href="#"
-										>Facebook</a
-									>
-								</li>
-								<li class="header__social-links-item">
-									<a class="header__social-link" href="#"
-										>Linkedin</a
-									>
-								</li>
-							</ul> -->
 						</div>
 					</div>
 				</nav>
@@ -610,6 +589,70 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal-menu js-menu-container" id="mobile-menu">
+			<button
+				class="modal-menu__close-btn js-close-menu"
+				aria-label="кнопка закрытия модального меню"
+			>
+				<span class="modal-menu__close"></span>
+			</button>
+
+			<ul class="modal-menu__nav">
+				<li class="modal-menu__nav-item">
+					<a
+						href="./index.html"
+						class="modal-menu__page-link"
+					>
+						Студия</a
+					>
+				</li>
+				<li class="modal-menu__nav-item">
+					<a href="./portfolio.html" class="modal-menu__page-link modal-menu__page-link--current">
+						Портфолио</a
+					>
+				</li>
+				<li class="modal-menu__nav-item">
+					<a href="#" class="modal-menu__page-link">Контакты</a>
+				</li>
+			</ul>
+
+			<div class="modal-menu__wrapper-links">
+				<ul class="modal-menu__contacts">
+					<li class="modal-menu__contacts-item">
+						<a
+							class="modal-menu__contact modal-menu__contact-tel"
+							href="tel:+380961111111"
+						>
+							+38 096 111 11 11
+						</a>
+					</li>
+					<li class="modal-menu__contacts-item">
+						<a
+							class="modal-menu__contact modal-menu__contact-mail"
+							href="mailto:info@devstudio.com"
+						>
+							info@devstudio.com
+						</a>
+					</li>
+				</ul>
+
+				<ul class="modal-menu__soc-links">
+					<li class="modal-menu__soc-links-item">
+						<a href="" class="modal-menu__social-link">Instagram</a>
+					</li>
+					<li class="modal-menu__soc-links-item">
+						<a href="" class="modal-menu__social-link">Twitter</a>
+					</li>
+					<li class="modal-menu__soc-links-item">
+						<a href="" class="modal-menu__social-link">Facebook</a>
+					</li>
+					<li class="modal-menu__soc-links-item">
+						<a href="" class="modal-menu__social-link">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<script src="./js/menu.js"></script>
 	</body>
 </html>

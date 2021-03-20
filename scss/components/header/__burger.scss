@@ -1,4 +1,4 @@
-.header__menu-btn {
+.header__menu-toggle {
 	outline: none;
 	@media (min-width: 768px) {
 		display: none;
@@ -10,7 +10,7 @@
 	background-color: $colorMain;
 	fill: $colorIconForm;
 	@include transition(fill);
-	.header__menu-btn:hover > & {
+	.header__menu-toggle:hover > & {
 		fill: $colorDecor;
 	}
 }

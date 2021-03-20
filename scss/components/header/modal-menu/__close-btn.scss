@@ -1,0 +1,34 @@
+.modal-menu__close-btn {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	background-color: $colorMain;
+	height: 40px;
+	width: 40px;
+	
+}
+
+.modal-menu__close {
+	@include centeredFlex;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		display: block;
+		height: 3px;
+		width: 25px;
+		background-color: $colorNav;
+	}
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
+	.modal-menu__close-btn:hover > &:before,
+	.modal-menu__close-btn:hover > &:after,
+	.modal-menu__close-btn:focus > &:before,
+	.modal-menu__close-btn:focus > &:after {
+		background-color: $colorDecor;
+	}
+}

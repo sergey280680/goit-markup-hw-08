@@ -1,0 +1,26 @@
+.modal-menu__contacts{
+	margin-bottom: 64px;
+}
+
+.modal-menu__contacts-item:not(:last-child){
+margin-bottom: 32px;
+}
+
+.modal-menu__contact {
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	&:hover{
+		text-shadow: 0px 0px 30px $colorTextshoadow;
+	}
+}
+
+.modal-menu__contact-tel {
+	font-size: 34px;
+	line-height: 40px;
+	color: $colorDecor;
+}
+.modal-menu__contact-mail {
+	font-size: 24px;
+	line-height: 28px;
+	color: $colorContact;
+}

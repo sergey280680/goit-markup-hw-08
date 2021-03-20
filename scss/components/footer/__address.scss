@@ -1,22 +1,40 @@
+// === footer__address ===
+.footer__address-wrapper,
+.footer__address {
+	text-align: center;
+	@media (min-width: 1200px) {
+		text-align: left;
+	}
+}
 
-  .footer__address {
-    margin-right: 81px;
-  }
+.footer__address-wrapper {
+	@media (max-width: 767px) {
+		margin-bottom: 56px;
+	}
+}
 
-  .footer__text-address {
-    font-size: 14px;
-    line-height: 1.7;
-    color: $colorMain;
-  }
-  .footer__contact {
-    font-size: 14px;
-    line-height: 1.7;
-    color:$colorGrey_06;
-  }
-  .footer__contacts {
-    margin-top: 9px;
-  }
-  .footer__item:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.footer__logo {
+	margin-bottom: 20px;
+	color: $colorMain;
+}
 
+.footer__text-address {
+	font-size: 14px;
+	line-height: 1.8;
+	color: $colorMain;
+	font-weight: 400;
+	letter-spacing: 0.03em;
+	margin-bottom: 5px;
+}
+
+.footer__contacts-item:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.footer__contact {
+	font-size: 14px;
+	line-height: 1.8;
+	color: $colorGrey_06;
+	font-weight: normal;
+	letter-spacing: 0.03em;
+}

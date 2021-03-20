@@ -1,9 +1,27 @@
-.footer {
-  background-color: $colorBgFooter;
-  padding: 60px 0;
-
-  &__container {
-    display: flex;
-    align-items: baseline;
-  }
+.footer__container {
+	@media (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	@media (min-width: 1200px) {
+		flex-wrap: nowrap;
+	}
+}
+.footer__address-wrapper,
+.footer__social-links {
+	@media (min-width: 768px) {
+		flex: 0 1 50%;
+	}
+}
+.footer__subscribe-newsletter {
+	@media (min-width: 768px) {
+		flex: 0 1 100%;
+	}
+}
+.footer__address-wrapper,
+.footer__social-links,
+.footer__subscribe-newsletter {
+	@media (min-width: 1200px) {
+		flex: none;
+	}
 }

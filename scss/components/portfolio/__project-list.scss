@@ -24,6 +24,9 @@
 		width: calc((100% - 60px) / 2);
 		margin: 15px;
 	}
+	@media (min-width: 1200px){
+		width: calc((100% - 90px) / 3);
+	}
 }
 
 .portfolio__progect-link {
