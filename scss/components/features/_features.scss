@@ -37,10 +37,16 @@
 }
 
 .features__title {
-	margin-bottom: 10px;
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 0.03em;
+	margin-bottom: 10px;
+	@media (max-width: 767px) {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
 }
 
 .features__text {
